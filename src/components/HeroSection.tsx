@@ -15,8 +15,7 @@ export function HeroSection() {
           backgroundPosition: 'center',
         }}
       />
-      
-      {/* Liquid Glass Floating Elements */}
+    
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-primary rounded-full opacity-20 floating glass" />
         <div className="absolute top-40 right-32 w-24 h-24 bg-gradient-secondary rounded-2xl opacity-15 floating-delayed glass" />
@@ -107,31 +106,32 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
           >
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="group text-black bg-primary hover:bg-primary/90 px-10 py-5 rounded-2xl text-xl font-semibold shadow-glass-lg hover:shadow-glow transition-all duration-300 neumorphism-button"
               style={{
                 boxShadow: '20px 20px 60px #bebebe, -20px -20px 60px #ffffff'
               }}
+              onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Start Free Trial
               <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
             </Button>
             
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="lg"
               className="group glass border-glass-border hover:bg-glass text-card-foreground px-10 py-5 rounded-2xl text-xl font-semibold transition-all duration-300 neumorphism-button-outline"
               style={{
                 boxShadow: 'inset 20px 20px 60px #bebebe, inset -20px -20px 60px #ffffff'
               }}
+              onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Play className="mr-3 h-6 w-6" />
               Schedule Demo
             </Button>
           </motion.div>
-          
-          {/* Enhanced Stats with Glass Cards */}
+     
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
