@@ -19,15 +19,15 @@ export function Footer() {
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
               <a 
-                href="mailto:contact@papermind.ai"
+                href="mailto:papermind@gmail.com"
                 className="flex items-center space-x-2 text-text-secondary hover:text-primary transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                <span>contact@papermind.ai</span>
+                <span>papermind@gmail.com</span>
               </a>
               
               <a 
-                href="https://wa.me/923001234567"
+                href="https://wa.me/923092265659"
                 className="flex items-center space-x-2 text-text-secondary hover:text-primary transition-colors"
               >
                 <MessageCircle className="w-5 h-5" />
