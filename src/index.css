@@ -5,8 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Glassmorphism Design System - Apple-inspired liquid glass aesthetics */
-/* src/index.css */
 @font-face {
   font-family: 'JameelNooriKasheeda';
   src: url('./assets/myFont.ttf') format('truetype');
@@ -359,5 +357,14 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  html {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
   }
 }
