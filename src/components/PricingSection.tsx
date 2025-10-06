@@ -33,7 +33,7 @@ const pricingPlans = [
       { text: "Priority support", type: "unlocked" },
     ],
     idealFor: "Large schools & academies",
-    price: "PKR 19,500",
+    price: "PKR 14,500",
   },
 ];
 
@@ -124,3 +124,4 @@ const PricingSection = () => {
 };
 
 export default PricingSection;
+
